@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using C_sharp_practice.math;
 
 namespace C_sharp_practice
@@ -15,6 +16,41 @@ namespace C_sharp_practice
             Console.WriteLine("My name is " + firstname + " " + lastname + " " + " and My age is " + age); 
         }
 
+    }
+
+    //oop concept
+
+    class Animal
+    {
+        public string name;
+        public int agees;
+        public static int animalcount = 0;
+
+        //method
+        public void info()
+        {
+            Console.WriteLine($"Name: {name}, Age: {agees}");
+        }
+
+        //constructor declaration
+        public Animal(string _name, int _age)
+        {
+            name= _name;
+            agees= _age;
+            animalcount++;
+        }
+    }
+
+    //Inheritance
+
+    class Dog : Animal
+    {
+        public string breed;
+
+        public Dog(string _name, int _age, string _breed) : base(_name, _age)
+        {
+            breed = _breed;
+        }
     }
 
     class Program
@@ -125,7 +161,7 @@ namespace C_sharp_practice
             int k = 0;
             do
             {
-                Console.Write(k+"\t");
+                Console.Write(k + "\t");
                 k++;
             } while (k < 10);
             //foreach loop
@@ -136,7 +172,68 @@ namespace C_sharp_practice
             }
 
 
-            //Method 
+            //Method call
+            int Myage = Age(2024, 2002); //data type variable name = method name (parameter1 value, parameter2 value)
+            Console.WriteLine(Myage); //print value
+
+
+            //array and list
+
+            //array declaration
+            int[] numberes = new int[] { 1, 2, 3, 4, 5 }; //data type [] array name = new data type[] { value1, value2, value3
+            foreach ( var number in numberes) //foreach (var variable name in array name)
+            {
+                Console.WriteLine(number);
+            }
+
+            //list declaration
+            List<string> strings = new List<string>(); //List<data type> list name = new List<data type>()
+            strings.Add("samiul"); //list name.Add("value")
+            strings.Add("islam"); //list name.Add("value")
+            strings.Add("tuhin"); //list name.Add("value")
+
+            strings.RemoveAt(1); //list name.RemoveAt(index number)
+
+            foreach (var str in strings) //foreach (var variable name in list name)
+            {
+                Console.WriteLine(str);
+            }
+
+            //or using for loop
+
+            for(int i=0;i<strings.Count;i++) //for(int i=0;i<list name.Count;i++)
+            {
+                Console.WriteLine(strings[i]); //print list value
+            }
+
+
+            //oop system or oop declaration
+
+            Animal dog = new Animal("cow",20); //access modifier object name = new class name()
+            dog.info(); //method call
+
+            Animal cat = new Animal("cat", 5);//access modifier object name = new class name()
+            cat.info(); //method call
+
+            Console.WriteLine("Total animal: " + Animal.animalcount); //print value
+            //static variable call using class name.variable name
+
+            //inheritance system or inheritance declaration
+
+            Dog dog1 = new Dog("dog", 3, "bulldog"); //access modifier object name = new class name()
+            dog1.info(); //method call
+            Console.WriteLine("Breed: " + dog1.breed); //print value
+
+
+
+
+
+
+        }
+        //method declaration. Basically method is a function. All function is called method in C# but all method is not function.Because method can return void value and function always return value. method always write outside the main method and inside the program class.
+        public static int Age(int CurrenYear, int BirthYear) //access modifier static data type method name (parameter1 data type parameter1 name, parameter2 data type parameter2 name)
+        {
+            return CurrenYear - BirthYear; //return value
 
         }
     }
