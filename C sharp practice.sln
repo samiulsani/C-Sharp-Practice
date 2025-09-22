@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C sharp practice", "C sharp practice\C sharp practice.csproj", "{2789776D-8D15-4023-9381-A899690ABF64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetterSetter", "GetterSetter\GetterSetter.csproj", "{9BEDD55A-3F08-46ED-AF7E-1058B4A9DC4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2789776D-8D15-4023-9381-A899690ABF64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2789776D-8D15-4023-9381-A899690ABF64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2789776D-8D15-4023-9381-A899690ABF64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BEDD55A-3F08-46ED-AF7E-1058B4A9DC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEDD55A-3F08-46ED-AF7E-1058B4A9DC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEDD55A-3F08-46ED-AF7E-1058B4A9DC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEDD55A-3F08-46ED-AF7E-1058B4A9DC4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

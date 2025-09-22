@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2789776D-8D15-4023-9381-A899690ABF64}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>C_sharp_practice</RootNamespace>
-    <AssemblyName>C sharp practice</AssemblyName>
+    <ProjectGuid>{9BEDD55A-3F08-46ED-AF7E-1058B4A9DC4A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GetterSetter</RootNamespace>
+    <AssemblyName>GetterSetter</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="enum.cs" />
-    <Compile Include="math\calculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
